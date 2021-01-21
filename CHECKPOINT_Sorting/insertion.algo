@@ -1,0 +1,15 @@
+ALGORITHM insertion_sort
+VAR
+    tab : ARRAY_OF INTEGER[length];
+    min : INTEGER;
+BEGIN
+    FOR i FROM 1 TO tab.length -1 STEP 1  DO
+    min:=tab[i];
+    FOR j FROM i-1 TO 0 STEP -1  DO
+        IF (tab[j]<min) THEN
+            swap(tab[j],min)
+        END_IF
+    END_FOR
+
+    END_FOR
+END
